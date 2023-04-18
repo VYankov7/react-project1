@@ -14,7 +14,7 @@ export const Navbar = () => {
       </div>
       <div className="user">
         <p> {auth.currentUser?.displayName} </p>
-        <img src={auth.currentUser?.photoURL || ""} width="20" height="20" />
+        <img src={auth.currentUser?.photoURL || ""} width="20" height="20" alt="profileimg"/>
       </div>
     </div>
   );
