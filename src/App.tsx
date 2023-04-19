@@ -5,6 +5,7 @@ import { Main } from './pages/main/main';
 import { Login } from './pages/login';
 import { Navbar } from './components/navbar';
 import { CreatePost } from './pages/create-post/create-post';
+import './index.css'
 
 function App() {
   return (

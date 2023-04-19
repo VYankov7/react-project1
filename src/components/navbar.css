@@ -1,0 +1,93 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* position: fixed; */
+  margin-top: 0;
+}
+
+.selected-link:active {
+  border: 1px solid red;
+}
+
+.navbar .links {
+  /* text-align: center; */
+  /* margin-right: 50px; */
+  /* flex: 1; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* list-style: none; */
+} 
+
+.links :hover {
+  color: grey;
+} 
+
+.links :active {
+  color: var(--color-golden);
+} 
+
+
+.links a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 10px;
+  
+}
+
+.navbar .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.user p {
+  font-size: 15px;
+  margin-right: 10px;
+  color: white;
+}
+
+/* .user button {
+  
+} */
+
+.user p:hover {
+  border-bottom: 1px solid var(--color-golden);
+  cursor: pointer;
+  color: var(--color-golden);
+  font-size: 20px;
+}
+
+.user img {
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+.logoutbutton {
+  margin-left: 0.9rem;
+  font-family: serif;
+  padding: 0.5rem 0.5rem;
+  background-color: grey;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.logoutbutton:hover {
+  color: var(--color-golden);
+}
+
+.profilepicture {
+  width: 50px;
+  height: 50px;
+}
+
+.profilepicture:hover {
+  border: 2px solid var(--color-golden);
+}

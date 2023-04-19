@@ -1,0 +1,52 @@
+.liketext {
+  font-family: serif;
+  font-size: 1.5rem;
+  display: inline-flex;
+  background-color: grey;
+  border-radius: 50px;
+  padding: 0.2rem 1.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+.liketext:hover {
+  background-color: var(--color-gray);
+  color: white;
+}
+
+.disliketext {
+  font-family: serif;
+  font-size: 1.5rem;
+  display: inline-flex;
+  background-color:  var(--color-gray);
+  border-radius: 50px;
+  padding: 0.2rem 1.5rem;
+  cursor: pointer;
+  width: 100%;
+  color: red;
+}
+
+.disliketext:hover {
+  background-color: grey;
+}
+
+.likeicon {
+  margin-right: 9px; 
+  padding-bottom: 2px;
+  font-size: larger;
+}
+
+.dislikeicon {
+  margin-right: 9px; 
+  margin-top: 5px;
+  font-size: larger;
+}
+
+.like-button{
+  background-color: transparent;
+  border: none;
+}
+
+.like-button:hover{
+  cursor: pointer;
+}

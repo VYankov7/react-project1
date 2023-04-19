@@ -3,6 +3,9 @@ import { Post as IPost } from "./main";
 import { auth, db } from "../../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect, useState } from "react";
+import { FcLikePlaceholder } from "react-icons/fc";
+import { FcLike } from "react-icons/fc";
+import "./post.css"
 
 interface Props {
   post: IPost;
@@ -63,7 +66,7 @@ export const Post = (props: Props) => {
   }, []);
 
   return (
-    <div >
+    <div>
       <div className="title">
         <h1> {post.title}</h1>
       </div>
@@ -72,8 +75,12 @@ export const Post = (props: Props) => {
       </div>
       <div className="footer">
         <p> {post.username} </p>
-        <button onClick={hasUserLiked ? removeLike : addLike}>{hasUserLiked ? <>&#128078;</> : <>&#128077;</>}</button>
-        {likes && <p>Likes: {likes?.length} </p>}
+          <button className="like-button" onClick={hasUserLiked ? removeLike : addLike}>
+            {hasUserLiked 
+            ? <><div className="liketext"><FcLike className="likeicon"/>Like</div></> 
+            : <><div className="disliketext"><FcLikePlaceholder className="likeicon"/>Dislike</div></>}
+          </button>
+          {likes && <p>Likes: {likes?.length} </p>}
       </div>
     </div>
   );
