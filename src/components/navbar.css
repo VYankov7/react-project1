@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: black;
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -24,7 +24,7 @@
 } 
 
 .links :hover {
-  color: grey;
+  color: black;
 } 
 
 .links :active {
@@ -33,12 +33,35 @@
 
 
 .links a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 3px solid white;
-  padding-bottom: 2px;
-  margin: 10px;
-  
+  display: inline-block;
+
+  color: #1d1d1d;
+  text-decoration: none; 
+  /* border-bottom: 3px solid #ff6d00; */
+  padding-bottom: 2px; 
+  margin: 10px; 
+}
+
+.links a:hover {
+  display: inline-block;
+}
+
+
+.links a:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #ff6d00;
+  transition: 300ms;
+}
+
+.links a:hover:after {
+  width: 100%;
+}
+
+.links a:focus {
+  color: #ff6d00;
 }
 
 .navbar .user {
@@ -51,7 +74,7 @@
 .user p {
   font-size: 15px;
   margin-right: 10px;
-  color: white;
+  color: #1d1d1d;
 }
 
 /* .user button {
@@ -59,10 +82,10 @@
 } */
 
 .user p:hover {
-  border-bottom: 1px solid var(--color-golden);
   cursor: pointer;
-  color: var(--color-golden);
+  color: #ff6d00;
   font-size: 20px;
+  transition: 300ms;
 }
 
 .user img {
@@ -72,11 +95,13 @@
 
 .logoutbutton {
   margin-left: 0.9rem;
-  font-family: serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 0.5rem 0.5rem;
   background-color: grey;
   color: white;
   font-size: 1.2rem;
+  cursor: pointer;
+
 }
 
 .logoutbutton:hover {
@@ -86,8 +111,10 @@
 .profilepicture {
   width: 50px;
   height: 50px;
+  cursor: pointer;
+
 }
 
 .profilepicture:hover {
-  border: 2px solid var(--color-golden);
+  border: 2px solid black;
 }
