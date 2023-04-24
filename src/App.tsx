@@ -4,6 +4,7 @@ import './App.css';
 import { Main } from './pages/main/main';
 import { Login } from './pages/login';
 import { Navbar } from './components/navbar';
+import BackToTopButton from "./components/backToTopButton";
 import { CreatePost } from './pages/create-post/create-post';
 import './index.css'
 
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        <BackToTopButton />
         <Routes>
           <Route path='/' element={<Main />}/>
           <Route path='/login' element={<Login />}/>

@@ -16,8 +16,8 @@ export const CreateForm = () => {
   const navigate = useNavigate();
 
   const schema = yup.object().shape({
-    title: yup.string().required("You must add a title."),
-    description: yup.string().required("You must add a description."),
+    title: yup.string().required("You must add a title.").trim(),
+    description: yup.string().required("You must add a description.").trim(),
   });
 
   const { register, handleSubmit, formState: { errors } } = useForm<CreateFormData>({

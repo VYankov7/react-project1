@@ -1,0 +1,38 @@
+.loginBtn{
+  color:black;
+  background-color: lime;
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+
+}
+
+/* .loginBtn:hover{
+  opacity: 0.7;
+  transition:5s;
+  transform: rotateX(2500deg) rotateY(2500deg) rotateZ(2500deg) ;
+  
+}  */
+.loginBtn:focus{
+  transform: translateY(-4.4rem) translateX(43.3rem) rotateX(180deg) rotateY(180deg) ;
+  width: 4.6rem;
+  font-size:0.5rem; 
+  /* opacity: 0; */
+  transition: 1.5s;
+}
+
+.loginBtn {
+  /* animation-duration: 2s; */
+  animation-name: animate-fade;
+  /* animation-delay: 2s; */
+  animation-fill-mode: backwards;
+
+}
+
+ 
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

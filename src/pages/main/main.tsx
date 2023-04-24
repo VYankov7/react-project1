@@ -2,6 +2,7 @@ import { getDocs, collection, getDoc } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { db } from "../../config/firebase";
 import { Post } from "./post";
+import "./main.css"
 
 export interface Post {
   id: string;
